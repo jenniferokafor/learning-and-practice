@@ -1,7 +1,3 @@
-let val;
+const taskTitle = (document.getElementById('task-title'));
 
-val = document;
-
-val = document.forms[0].method;
-
-console.log(val);
+document.querySelector('#task-title');
