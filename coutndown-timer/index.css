@@ -1,3 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: 300;
+    padding: 2rem;
+}
+
+.coming-soon {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 50vw;
+    height: 50vh;
+    padding-top: 4rem;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.day, .hour, .minute, .second {
+    font-size: 3rem;
 }
