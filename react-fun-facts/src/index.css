@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, ul, li {
+  margin: 0;
+}
+
+/* navbar */
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(33, 34, 42, 1);
+  height: 91px;
+  padding: 0 27px;
+}
+
+.branding {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo {
+  background: url(./react-logo.svg) no-repeat;
+  width: 29px;
+  height: 29px;
+}
+
+.branding h2 {
+  font-size: 22.25px;
+  font-weight: 700;
+  color: rgba(97, 218, 251, 1);
+
+}
+
+.main-nav h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(222, 235, 248, 1);
+}
+
+/* main content section */
+.container {
+  height: 100vh;
+  background: rgba(40, 45, 53, 1);
+}
+
+.content {
+  padding: 57px 27px 0 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  background-image: url(./react-background.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.content h1 {
+  font-size: 39.06px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+
+.content li {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 20.36px;
+}
+
+.content ul li::marker {
+  font-size: 1.4em;
+  color: rgba(97, 218, 251, 1);
+}
