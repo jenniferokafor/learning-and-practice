@@ -1,0 +1,135 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* app.js */
+.app-container {
+  width: 100vw;
+  padding: 44px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(35, 37, 44, 1);
+}
+
+/* info.js */
+.info-wrapper, .profile-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-wrapper {
+  background: rgba(26, 27, 33, 1);
+  max-width: 317px;
+}
+
+.profile-img {
+  max-width: 317px;
+}
+
+.profile-text {
+  gap: 7px;
+  margin-top: 21px;
+}
+
+.profile-text h1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+
+.profile-text h2 {
+  font-size: 12.8px;
+  font-weight: 400;
+  color: rgba(243, 191, 153, 1);
+}
+
+.profile-text h3 {
+  font-size: 10.24px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.social-section, .social {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-section {
+  gap: 17px;
+  margin-top: 15px;
+}
+
+.social {
+  align-items: center;
+  justify-content: center;
+  gap: 9.6px;
+  width: 115px;
+  height: 34px;
+  border-radius: 6px;
+}
+
+.social-bar-1 {
+  background: rgba(255, 255, 255, 1);
+  color: rgba(55, 65, 81, 1);
+}
+
+.social-bar-2 {
+  background: rgba(80, 147, 226, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* about.js */
+.about-wrapper {
+  padding-top: 59px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  background: rgba(26, 27, 33, 1);
+  max-width: 317px;
+}
+
+.about-text {
+  margin: 0 34px 0 36px;
+}
+
+.about-text h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(245, 245, 245, 1);
+  margin-bottom: 5px;
+}
+
+.about-text p {
+  font-size: 10.24px;
+  font-weight: 400;
+  color: rgba(245, 245, 245, 1);
+}
+
+/* social icons */
+.footer-wrapper {
+  background: rgba(22, 22, 25, 1);
+  width: 317px;
+  height: 64px;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+} 
