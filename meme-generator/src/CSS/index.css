@@ -1,0 +1,111 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Karla:wght@400;700&display=swap');
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+/* header */
+header, .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header {
+    height: 55px;
+    width: 100vw;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    background: linear-gradient(90deg,#672280 0%, #a626d3 80%);
+    color: white;
+}
+
+.logo {
+    gap: .5rem;
+    font-size: 20.75px;
+    font-weight: 700;
+}
+
+.logo img {
+    width: 31.31px;
+    height: 26.22px;
+}
+
+.attribute {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+
+/* meme section */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 477px;
+}
+
+/* form */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+input {
+    width: 230px;
+    max-width: 230px;
+    min-height: 35px;
+    text-indent: 1rem;
+    border: 1px solid rgba(213, 212, 216, 1);
+    border-radius: 5px;
+    color: rgba(13, 13, 13, 1);
+
+}
+
+button {
+    height: 40px;
+    background: linear-gradient(90deg,#672280 0%, #a626d3 80%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* meme display / result */
+.result {
+    position: relative;
+}
+
+.result img {
+    width: 477px;
+}
+
+.result-f-line, .result-s-line {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 0px 5px rgba(0,0,0,0.6);
+}
+
+.result-f-line {
+    position: absolute;
+    top: 15px;
+    right: 160px;
+}
+
+.result-s-line {
+    position: relative;
+    bottom: 50px;
+    left: 80px;
+}
