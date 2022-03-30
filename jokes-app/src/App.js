@@ -1,11 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 import Jokes from './jokes';
+import jokesData from './jokesData';
 
 function App() {
+  const jokeElement = jokesData.map(joke => {
+    return <Jokes setup={joke.setup} punchline={joke.punchline}/>
+  })
   return (
     <div>
-      <Jokes 
+      {jokeElement}
+    </div>
+  )
+}
+
+export default App;
+
+{/* <Jokes 
         setup = "I got my daughter a fridge for her birthday."
         punchline= "I can't wait to see her face light up when she opens it."
       />
@@ -24,9 +35,4 @@ function App() {
       <Jokes 
         setup = "What's the best thing about Switzerland?"
         punchline = "I don't know, but the flag is a big plus!"
-      />
-    </div>
-  )
-}
-
-export default App;
+      /> */}

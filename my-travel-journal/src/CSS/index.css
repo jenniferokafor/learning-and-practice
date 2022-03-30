@@ -1,0 +1,97 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+  --red: #F55A5A;
+  --light-grey: #918E9B;
+  --custom-black: #2B283A;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+  color: var(--custom-black);
+}
+
+/* header */
+header {
+  background-color: var(--red);
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 14.46px;
+  font-weight: 500;
+}
+
+/* card section */
+section {
+  margin: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.card-component {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.card-component img {
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  font-size: 10.24px;
+  margin-top: 1rem;
+  max-width: 500px;
+}
+
+.location-div, .location-text-and-pin {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  align-items: center;
+}
+
+.location-text-and-pin {
+  text-transform: uppercase;
+}
+
+.pin {
+  width: 9.55px;
+  height: 9.55px;
+}
+
+.location-div a {
+  color: var(--light-grey);
+}
+
+.details h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: .75rem;
+}
+
+.details h4 {
+  font-weight: 700;
+}
+
+.details p {
+  line-height: 15.36px;
+}
