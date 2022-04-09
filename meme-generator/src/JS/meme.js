@@ -1,13 +1,21 @@
+import React from 'react';
 import resultImg from '../assets/memeimg.png';
 import memesData from './memesdata';
 
 let memesArray = memesData.data.memes;
 
 export default function Meme () {
+    const [memeImage, setMemeImage] = React.useState('');
+
     function imageUrl () {
         let num = Math.floor(Math.random() * memesArray.length);
-        let thisUrl = memesArray[num].url;
-        console.log(thisUrl)
+        setMemeImage(memesArray[num].url);
+
+
+
+
+        // let thisUrl = memesArray[num].url;
+        // console.log(thisUrl)
     }
 
     return (
@@ -22,7 +30,7 @@ export default function Meme () {
             </div>
 
             <div className="result">
-                <img src={resultImg} />
+                <img src={memeImage} />
                 <p className='result-f-line'>shut up</p>
                 <p className='result-s-line'>and take my money</p>
             </div>

@@ -14,7 +14,6 @@ header, .logo {
 
 header {
     height: 55px;
-    width: 100vw;
     padding: 1rem 2rem;
     justify-content: space-between;
     background: linear-gradient(90deg,#672280 0%, #a626d3 80%);
@@ -79,6 +78,7 @@ button {
     color: white;
     font-size: 16px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 /* meme display / result */
