@@ -2,21 +2,35 @@ import React from 'react';
 import resultImg from '../assets/memeimg.png';
 import memesData from './memesdata';
 
-let memesArray = memesData.data.memes;
+// a state object for the meme image and text
 
 export default function Meme () {
-    const [memeImage, setMemeImage] = React.useState('');
+    const [meme, setMeme] = React.useState({
+        topText: '',
+        bottomText: '',
+        randomImage: 'https://i.imgflip.com/1ur9b0.jpg',
+
+    })
+
+    // state for meme images array
+
+    const [allMemeImages, setAllMemeImages] = React.useState(memesData.data.memes);
+
+
+    // function to get the image from 
 
     function imageUrl () {
+        let memesArray = allMemeImages;
         let num = Math.floor(Math.random() * memesArray.length);
-        setMemeImage(memesArray[num].url);
+        let url = memesArray[num].url;
 
-
-
-
-        // let thisUrl = memesArray[num].url;
-        // console.log(thisUrl)
+        setMeme(prevMeme => ({
+            ...prevMeme, 
+            randomImage: url
+        })
+        )
     }
+
 
     return (
         <main>
@@ -30,10 +44,13 @@ export default function Meme () {
             </div>
 
             <div className="result">
-                <img src={memeImage} />
+                <img src={meme.randomImage} />
                 <p className='result-f-line'>shut up</p>
                 <p className='result-s-line'>and take my money</p>
             </div>
         </main>
     )
+
+    // const [memeImage, setMemeImage] = React.useState({
+    // });
 }
