@@ -1,5 +1,7 @@
 import {useState} from 'react';
-import { Dice, StyledApp } from "./App.styled";
+import { nanoid } from 'nanoid'
+
+import { Dice, StyledApp, StyledButton } from "./App.styled";
 import Die from "./Die";
 
 function App() {
@@ -11,16 +13,31 @@ function App() {
   function allNewDice () {
     const newDice = []
     for (let i = 0; i < 10; i++) {
-      newDice.push(Math.ceil(Math.random() * 6))
+      newDice.push({
+        value: Math.ceil(Math.random() * 6),
+        isHeld: false,
+        id: nanoid()
+      })
     }
     return newDice
   }
 
+  console.log(dice)
+
   // mapping over dice array to generate elements for rendering. Using same value as both index & element value
 
-  const diceElements = dice.map(die => <Die value={die}/>)
+  const diceElements = dice.map(die => 
+    <Die 
+    key={die.id} 
+    value={die.value} 
+    isHeld={die.isHeld}
+    />
+  )
 
-
+  // create new dice values 
+  function rollDice () {
+    setDice(allNewDice())
+  }
 
   return (
     <StyledApp>
@@ -31,6 +48,9 @@ function App() {
           <Dice>
             {diceElements}
           </Dice>
+
+          {/* button */}
+          <StyledButton onClick={rollDice}>Roll</StyledButton>
         </div>
       </div>
     </StyledApp>

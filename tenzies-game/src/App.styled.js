@@ -50,3 +50,20 @@ export const StyledDie = styled.div`
     color: #2B283A;
     cursor: pointer;
 `
+
+export const StyledButton = styled.button`
+    width: 92.16px;
+    height: 35.84px;
+    background-color: #5035FF;
+    color: #fff;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    border-radius: 3.81277px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    font-size: 16.38px;
+
+    &:hover {
+        opacity: 75%;
+    }
+`
